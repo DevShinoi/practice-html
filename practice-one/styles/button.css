@@ -1,0 +1,140 @@
+.div-margin {
+  margin: 20px;
+}
+
+.subscribe-btn {
+  background-color: rgb(200, 32, 32);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  vertical-align: top;
+}
+
+.subscribe-btn:hover {
+  opacity: 0.8;
+}
+
+.subscribe-btn:active {
+  opacity: 0.6;
+}
+
+.join-btn {
+  background-color: white;
+  color: rgb(41, 118, 211);
+  border: 2px solid;
+  border-color: rgb(41, 118, 211);
+  border-radius: 3px;
+  padding: 10px 14px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, opacity 0.25s;
+  vertical-align: top;
+}
+
+.join-btn:hover {
+  background-color: rgb(41, 118, 211);
+  color: white;
+}
+
+.join-btn:active {
+  background-color: rgb(41, 118, 211);
+  color: white;
+  opacity: 0.8;
+}
+
+.tweet-btn {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.tweet-btn:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tweet-btn:active {
+  opacity: 0.8;
+}
+
+.pagination-btn {
+  background-color: white;
+  color: rgb(74, 74, 74);
+  border: solid 1px rgb(149, 149, 149);
+  border-radius: 100%;
+  padding: 12px 16px;
+  vertical-align: top;
+  font-weight: bold;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.pagination-btn:hover {
+  background-color: rgb(0, 132, 255);
+  color: white;
+  border: 1px solid rgb(0, 132, 255);
+}
+
+.pagination-btn:active {
+  opacity: 0.8;
+}
+
+.stretch-btn {
+  background-color: rgb(1, 169, 1);
+  border: none;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 3px;
+  vertical-align: top;
+  transition: padding 0.5s, opacity 0.1s;
+}
+
+.stretch-btn:hover {
+  background-color: rgb(0, 131, 0);
+  padding: 20px 30px 20px 30px;
+}
+
+.stretch-btn:active {
+  opacity: 0.8;
+}
+
+.shadow-btn {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 3px;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-btn:active {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+  transform: translateY(4px);
+}
+
+.margin-padding-btn {
+  background-color: rgb(108, 10, 199);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 20px 15px 20px;
+  font-weight: bold;
+  margin: 0px 10px 0px 10px;
+  transition: margin 0.2s, padding 0.2s;
+}
+
+.margin-padding-btn:hover {
+  margin: 0px 0px 0px 0px;
+  padding: 15px 30px 15px 30px;
+  opacity: 0.6;
+}
