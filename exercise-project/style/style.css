@@ -1,0 +1,39 @@
+*{
+  font-family: Roboto;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.search-bar {
+  font-size: 20px;
+  display: block;
+}
+
+
+.thumbnail{
+  width: 360px;
+  border: none;
+  border-radius: 8px;
+}
+
+.video-preview{
+  width: 360px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.video-title{
+  width: 360px;
+  font-size: large;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px 0px 5px 0px;
+}
+
+.video-author, .video-stats{
+  color: rgb(56, 56, 56);
+  font-size: 16px;
+}
