@@ -11,16 +11,9 @@
 }
 
 .thumbnail{
-  width: 360px;
+  width: 100%;
   border: none;
   border-radius: 8px;
-}
-
-.video-preview{
-  width: 360px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 16px;
 }
 
 .profile-picture{
@@ -30,15 +23,11 @@
 }
 
 .channel-picture{
-  display: inline-block;
   vertical-align: top;
-  width: 50px;
 }
 
 .video-info{
   margin-left: 8px;
-  display: inline-block;
-  width: 280px;
 }
 
 .video-title{
@@ -56,4 +45,16 @@
 
 .thumbnail-row{
   margin-bottom:12px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
 }

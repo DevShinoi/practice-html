@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      * {
+        font-family: Roboto;
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 16px;
+        grid-column: 16px;
+      }
+
+      .friend-container {
+        display: inline-block;
+        width: 240px;
+        height: 420px;
+        border: 1px solid rgb(80, 80, 80);
+        border-radius: 10px;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .friend-image {
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      .friend-button {
+        margin-top: 36px;
+        justify-items: center;
+        display: block;
+      }
+
+      .add-friend {
+        background-color: blue;
+      }
+
+      .remove-friend {
+        margin-top: 6px;
+        display: block;
+        background-color: rgb(131, 131, 131);
+      }
+
+      .friend-name {
+        margin-top: 5px;
+        margin-left: 5px;
+        vertical-align: top;
+      }
+
+      .add-friend,
+      .remove-friend {
+        border: none;
+        border-radius: 5px;
+        width: 180px;
+        height: 42px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- friend 1 -->
+      <div class="friend-container">
+        <div>
+          <img class="friend-image" src="./assets/1-friend.webp" alt="" />
+        </div>
+        <div class="friend-info">
+          <p class="friend-name">Veronica Marin</p>
+          <div class="friend-button">
+            <button class="add-friend">Add friend</button>
+            <button class="remove-friend">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
