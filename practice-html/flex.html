@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding-bottom: 500px;
+      }
+      .flex-sample-one {
+        margin-top: 20px;
+        margin-left: 10px;
+
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flex-div-one {
+        width: 100px;
+        background-color: lightcoral;
+      }
+
+      .flex-div-two {
+        flex: 1;
+        background-color: lightskyblue;
+      }
+
+      .flex-one {
+        flex: 1;
+        background-color: lightgreen;
+      }
+
+      .flex-two {
+        flex: 2;
+        background-color: lightskyblue;
+      }
+
+      .flex-header,
+      .flex-header-two,
+      .flex-header-three,
+      .flex-header-four {
+        margin-top: 20px;
+        margin-left: 10px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid gray;
+      }
+
+      .flex-header {
+        justify-content: start;
+      }
+      .flex-header-two {
+        justify-content: space-between;
+      }
+      .flex-header-three {
+        justify-content: space-around;
+      }
+      .flex-header-four {
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .flex-header-div {
+        width: 100px;
+        background-color: lightcoral;
+      }
+
+      .flex-header-div-one {
+        width: 100px;
+        background-color: lightgreen;
+      }
+
+      .flex-header-div-two {
+        width: 100px;
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-sample-one">
+      <div class="flex-div-one">Div 1 Text</div>
+      <div class="flex-div-two">Flex 1</div>
+    </div>
+
+    <div class="flex-sample-one">
+      <div class="flex-div-one">Div 1 Text</div>
+      <div class="flex-one">Flex 1</div>
+      <div class="flex-two">Flex 2</div>
+    </div>
+
+    <div class="flex-header">
+      <div class="flex-header-div">Div 1 Text</div>
+      <div class="flex-header-div-one">Div 2 Justify Start, Baseline</div>
+      <div class="flex-header-div-two">Div 3 Text</div>
+    </div>
+
+    <div class="flex-header-two">
+      <div class="flex-header-div">Div 1 Text</div>
+      <div class="flex-header-div-one">Div 2 Justify Space Between</div>
+      <div class="flex-header-div-two">Div 3 Text</div>
+    </div>
+
+    <div class="flex-header-three">
+      <div class="flex-header-div">Div 1 Text</div>
+      <div class="flex-header-div-one">Div 2 Space Around</div>
+      <div class="flex-header-div-two">Div 3 Text</div>
+    </div>
+
+    <div class="flex-header-four">
+      <div class="flex-header-div">Div 1 Text</div>
+      <div class="flex-header-div-one">Div 2 Space Between + Align Items</div>
+      <div class="flex-header-div-two">Div 3 Text</div>
+    </div>
+  </body>
+</html>
