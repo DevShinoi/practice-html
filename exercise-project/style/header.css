@@ -1,35 +1,47 @@
 .header{
-  background-color: white;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
   height: 72px;
-  margin-bottom: 20px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid rgb(215, 215, 215);
+  border-bottom: 1px solid rgb(216, 216, 216);
   z-index: 100;
+}
+
+.header img{
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.header div{
+  -moz-user-select: none;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
+
+
 .left-section, .middle-section, .right-section{
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .left-section {
   justify-content: start;
-  margin-left: 26px;
-  margin-right: 18px;
+  margin: 0px 26px 0px 26px;
   width: 300px;
 }
 
 .middle-section{
-  width: 1000px;
-  justify-content: center;
+  width: 800px;
+  column-gap: 20px;
+  justify-content:center;
 }
 
 .right-section{
@@ -39,15 +51,32 @@
   flex-shrink: 0;
 }
 
+.search-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center
+}
+
+.header-container{
+  display: flex;
+  transition: background-color 0.2s;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
 .search-bar {
   padding-left: 24px;
   width: 100%;
   min-width: 120px;
-  max-width: 600px;
+  max-width: 800px;
   height: 48px;
   border-radius: 24px 0px 0px 24px;
   border: 1px solid gray;
-  font-size: 22px;
+  font-size: 20px;
   display: block;
 }
 
@@ -59,19 +88,22 @@
 .youtube-logo {
   height: 24px;
   padding: 5px;
-  margin-left: 20px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 20px;
   cursor: pointer;
 }
 
 .voice-search-icon{
+  cursor: pointer;
   height: 24px;
   padding: 11px;
-  background-color: rgb(232, 232, 232);
-  margin-left: 10px;
-  margin-right: 10px;
+  background-color: rgb(236, 236, 236);
   border-radius: 50%;
-  transition: background-color 0.3s;
+  transition: opacity 0.2s;
+}
+
+.search-btn:active
+{
+  background-color: rgb(218, 218, 218);
 }
 
 .hamburger-menu, 
@@ -79,10 +111,11 @@
 .youtube-apps-icon,
 .notifications-icon
 {
+  cursor: pointer;
   height: 24px;
   padding: 11px;
   border-radius: 50%;
-  transition: background-color 0.2s;
+  transition: opacity 0.2s;
 }
 .notifications-icon-container{
   display: flex;
@@ -91,6 +124,7 @@
 }
 
 .notifications-count{
+  cursor: pointer;
   background-color: rgb(190, 0, 0);
   color: white;
   padding: 2px 6px 2px 6px;
@@ -99,27 +133,37 @@
   top: 6px;
   right: 2px;
   border: 1px white solid;
-  font-size: 12px;
+
 }
 
-.search-icon{
+.search-btn{
   height: 48px;
-  border-width: 1px;
-  border-color:gray;
-  background-color: rgb(232, 232, 232);
+  border:1px gray;
+  background-color: rgb(236, 236, 236);
   border-style: solid solid solid none;
   border-radius: 0px 27px 27px 0px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: opacity 0.2s;
 }
 
-.search-icon:hover{
-  background-color: rgb(201, 201, 201);
+.header-container .tooltip{
+  margin-top: 90px;
+  position: absolute;
+  opacity: 0;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  background: rgba(18, 18, 18, 0.6);
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: opacity 0.2s;
 }
 
-.search-icon-layout{
-  margin-right: 30px;
-  margin-left: 30px;
+.header-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-btn-layout{
+  margin: 0px 24px 0px 24px;
   height: 32px;
 }
 
@@ -139,25 +183,33 @@
   border: 1px solid rgb(0, 145, 255);
 }
 
+.notifications-container{
+  cursor: pointer;
+}
+
 .hamburger-menu:hover, 
-.voice-search-icon:hover,
 .upload-icon:hover,
 .youtube-apps-icon:hover,
 .notifications-icon:hover
 {
-  cursor: pointer;
   border: none;
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(218, 218, 218);
 }
 
+.search-btn:hover, 
+.voice-search-icon:hover{
+  background-color: rgb(218, 218, 218);
+}
 
 .hamburger-menu:active, 
-.voice-search-icon:active,
 .upload-icon:active,
 .youtube-apps-icon:active,
-.notifications-icon:active,
-.search-icon:active
+.notifications-icon:active
 {
-  background-color: rgb(172, 172, 172);
+  opacity: 0.6;
+}
+
+.voice-search-icon:active, .search-btn:active{
+  opacity: 0.6;
 }
 
