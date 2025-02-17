@@ -1,3 +1,16 @@
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
 .thumbnail{
   width: 100%;
   border: none;
@@ -32,17 +45,20 @@
 }
 
 .thumbnail-row{
+  position: relative;
   margin-bottom:12px;
 }
 
-.video-info-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-}
 
-.video-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 32px;
+
+.duration {
+  font: Roboto, Arial;
+  border-radius: 4px;
+  color: white;
+  background: rgba(18, 18, 18, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 4px;
+  font-size: 14px;
 }
